@@ -53,8 +53,25 @@
                     </ul>
 
                     </a>
-                </form>
                 </div>
+                <div class="popup" id="popup-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="close-btn" onclick="togglePopup()">&times;</div>
+                        <h1>LOGIN PANEL</h1>
+                        <form>
+                            <input type="text" id="login" name="login" placeholder="Login" /> <br /> <br />
+                            <input type="password" id="password" placeholder="Password" /> <br /> <br />
+                            <button type="submit">Login</button><br /><br />
+
+                            <a class="navbar-brand font-orbitron" href="#"> <img src="./assets/Logo.png"></a>
+
+
+                        </form>
+
+                    </div>
+                </div>
+                <button onclick="togglePopup()">Log in</button>
             </div>
           </nav>
 
@@ -142,6 +159,7 @@
             <div class="copyright text-center bg-dark text-white py-1">
                 <p>&copy: Copyright 2021 , all rights reserved</p>
             </div>
+            <script src="./popup.js"></script>
 
 </body>
 </html>
